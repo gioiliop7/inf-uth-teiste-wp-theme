@@ -1,0 +1,110 @@
+{
+    "key": "group_608589c33540c",
+    "title": "Μαθήματα",
+    "fields": [
+        {
+            "key": "field_608589d05ca01",
+            "label": "Εξάμηνο",
+            "name": "examino",
+            "type": "number",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": 8,
+            "step": ""
+        },
+        {
+            "key": "field_60858a7034999",
+            "label": "Διδακτικές Μονάδες",
+            "name": "ects",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60858a9e3499a",
+            "label": "Περιέχει εργαστήριο;",
+            "name": "ergasthrio",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_6088529683c0f",
+            "label": "Κατέυθυνση",
+            "name": "kateuthinsi",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Γενικής Παιδείας": "Γενικής Παιδείας",
+                "Μηχανικοί Δικτύων": "Μηχανικοί Δικτύων",
+                "Μηχανικοί Λογισμικού": "Μηχανικοί Λογισμικού",
+                "Μηχανικοί Υλικού": "Μηχανικοί Υλικού"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "subjects"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1624281149
+}

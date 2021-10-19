@@ -1,0 +1,551 @@
+/*
+Theme Name: Inf Uth
+Description: University of thessaly informatics theme
+Requires at least: WordPress 5.0.0
+Author: Giorgos Iliopoulos
+Version: 1.0
+Text Domain: inf-uth
+Domain Path: /languages
+*/
+
+/* Import fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('//db.onlinewebfonts.com/c/b2654d24a0afc19dabe02fba17411648?family=CeraGR-Regular');
+@import url('//db.onlinewebfonts.com/c/d191325cfe4f374d6f43147fd57ab2d4?family=CeraGR-Bold');
+@import url('//db.onlinewebfonts.com/c/d191325cfe4f374d6f43147fd57ab2d4?family=CeraGR-Thin');
+@import url('//db.onlinewebfonts.com/c/d191325cfe4f374d6f43147fd57ab2d4?family=CeraGR-Black');
+@import url('//db.onlinewebfonts.com/c/4c23d1c747b7c11cecbcc0bc4ecbed1a?family=CeraGR-Light');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root{
+	--mainred:#b03931;
+	--secondaryred:#d9534f;
+	
+}
+
+main{
+	flex:1;
+}
+
+html,
+body {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body{
+	display:flex;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family: 'CeraGR-Regular', sans-serif !important;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+}
+
+.hidden {
+	display: none !important;
+}
+
+html{
+	min-height:100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+address,
+big,
+cite,
+code,
+em,
+font,
+img,
+small,
+strike,
+sub,
+sup,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+button,
+table,
+caption,
+tr,
+th,
+td {
+	border: none;
+	font-size: inherit;
+	line-height: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: inherit;
+}
+
+a{
+	text-decoration: none!important;
+}
+
+img{
+	width:100%;
+}
+
+blockquote::before,
+blockquote::after {
+	content: '';
+}
+
+.header-logo{
+	max-width:80px;
+}
+
+.rowheader{
+	background-color: #8c2a00;
+	color:#fff;
+}
+
+.header-thl{
+	padding:10px;
+}
+
+.headericons{
+	display:flex;
+	justify-content: flex-end;
+}
+
+.headericons a{
+	color:#fff;
+	padding:10px;
+}
+
+.headericons a:hover{
+	color:#fff;
+}
+
+.headertext{
+	color:#000!important;
+}
+
+.dropdown-item.active, .dropdown-item:active{
+	background-color: none!important;
+}
+
+#hero-section {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+	  url("../inf-uth/assets/images/library_one.jpg");
+	background-size: cover;
+	background-position: center center;
+	min-height:80vh;
+	display:flex;
+	align-items: center;
+  }
+
+  .hero-greeting{
+	  color:#fff;
+	  align-self: center;
+  }
+
+.carousel-images{
+	max-height:400px;
+}
+
+#section-boxes{
+	position:relative;
+	top:-75px;
+	z-index: 10;
+	height:100px;
+}
+
+.boxes{
+	color:var(--mainred);
+	border:1px solid transparent;
+	background-color:#fff;
+	padding:20px;
+	border-radius:10px;
+	box-shadow: 0px 3px 6px #00000029;
+}
+
+.boxes:hover{
+	background-color: var(--mainred);
+	color:#fff;
+	transition:all ease 0.2s;
+}
+
+.box-icon{
+	font-size:45px;
+}
+
+
+.info-video{
+	width:100%;
+}
+
+#section-photos{
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../inf-uth/assets/images/photo-1542831371-29b0f74f9713.jpg);
+}
+
+.photos > img{
+	max-height:200px;
+	filter:grayscale(100%);
+}
+
+.photos > img:hover{
+	filter:none;
+	transition:all ease 0.2s;
+}
+
+.photos{
+	display:flex;
+	justify-content: center;
+}
+
+#section-photos > div > div > div > img{
+	max-width: 400px;
+	object-fit: cover;
+}
+
+.video-item{
+	display:flex;
+	align-items: center;
+}
+
+#section-numbers{
+	margin-bottom:30px;
+}
+
+.contact-info{
+	background: linear-gradient(rgba(217,83, 79, 0.7), rgba(217, 83, 79, 0.3)),
+	url('../inf-uth/assets/images/Lamia-castle.jpg');
+	color:#fff;
+}
+
+.info{
+	font-family:'CeraGR-Bold','sans-serif';
+}
+
+#announcements{
+	background:#f2f2f2;
+}
+
+.announcementsbox{
+	border-radius:10px;
+	border:1px solid #8c2a00;
+	height:170px;
+}
+
+.more{
+	position: absolute;
+	top:130px;
+}
+.more > a{
+	color:#8c2a00;
+	text-decoration: none;
+}
+
+.more > a:hover{
+	color:#b87882;
+}
+
+.announcements-title{
+	font-family:'CeraGR-Bold';
+}
+
+.announcements-date{
+	margin-top:10px;
+}
+
+.more-button-announcements{
+	color:#fff;
+	background-color:#8c2a00;
+	padding:10px 35px;
+	border:1px solid transparent;
+	border-radius:10px;
+	transition:all ease 0.2s;
+}
+
+.more-button-announcements:hover{
+	text-decoration: none;
+	color:#8c2a00;
+	background-color:#fff;
+	border:1px solid #8c2a00;
+}
+
+#mainpagebutton{
+	color:#fff;
+	background-color:#8c2a00;
+	padding:10px 35px;
+	border:1px solid transparent;
+	border-radius:10px;
+	transition:all ease 0.2s;
+}
+
+#mainpagebutton:hover{
+	text-decoration: none;
+	color:#8c2a00;
+	background-color:#fff;
+	border:1px solid #8c2a00;
+}
+
+.counter-name{
+	font-size:20px;
+}
+
+.counter-number{
+	font-size:40px;
+}
+
+.mec-table-side-day{
+	padding:10px!important;
+}
+
+#services{
+	background-color:#8c2a00;
+	color:#fff;
+}
+
+#services a{
+	color:#fff;
+	text-decoration: none;
+}
+
+.service-text{
+	font-size:25px;
+}
+
+.service-icon{
+	font-size:40px;
+	transition: transform .2s;
+}
+
+.service-icon:hover{
+	transform: scale(1.5);
+}
+
+.service-item{
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+}
+
+#useful-links > div > div > div > a > img{
+	width:100%;
+	height:60px;
+	object-fit: contain;
+}
+
+#footer {
+	padding-left: 0;
+	padding-right: 0;
+	margin-top: auto;
+	background-color: #f2f2f2;
+}
+
+  .footer-logo{
+	  max-width:200px;
+  }
+
+  .pagination{
+	  color:var(--mainred);
+	  font-size:20px;
+  }
+
+  .pagination a {
+	color:var(--mainred);
+	border:1px solid transparent;
+	border-radius: 50%;
+	transition:all ease 0.2s;
+  }
+
+  .pagination a:hover{
+	  color:#fff;
+	  background-color: #8c2a00;
+  }
+
+  .page-numbers{
+	  padding:0 10px;
+  }
+
+ a.prev.page-numbers, a.next.page-numbers{
+	  background:none;
+	  border-radius:0px;
+	  color:#8c2a00
+  }
+
+span.page-numbers.current{
+	font-weight: bold;
+}
+
+.subject-box{
+	background-color: #8c2a00;
+	color:#fff;
+	align-self: center;
+	height:250px;
+	transition:all ease 0.2s;
+	border:2px solid transparent;
+}
+
+.subject-box:hover{
+	background-color:#fff;
+	color:#8c2a00;
+	border:2px solid #8c2a00;
+}
+
+.subject-title{
+	padding:10px;
+	border-bottom:1px solid #fff;
+}
+
+  /* Scroll to top btn */
+.progress-wrap {
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	height: 46px;
+	width: 46px;
+	cursor: pointer;
+	display: block;
+	border-radius: 50px;
+	box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2);
+	z-index: 10000;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform: translateY(15px);
+	transform: translateY(15px);
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+  }
+  .progress-wrap.active-progress {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+  }
+  .progress-wrap::after {
+	position: absolute;
+	font-family: 'unicons';
+	content: '\e84b';
+	text-align: center;
+	line-height: 46px;
+	font-size: 36px;
+	color: var(--mainred);
+	left: 0;
+	top: 0;
+	height: 46px;
+	width: 46px;
+	cursor: pointer;
+	display: block;
+	z-index: 1;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+  }
+  .progress-wrap:hover::after {
+	opacity: 0;
+  }
+  .progress-wrap::before {
+	position: absolute;
+	font-family: 'unicons';
+	content: '\e84b';
+	text-align: center;
+	line-height: 46px;
+	font-size: 36px;
+	opacity: 0;
+	background-image: linear-gradient(298deg, var(--mainred), var(--var(--mainred)));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: var(--mainred);
+	left: 0;
+	top: 0;
+	height: 46px;
+	width: 46px;
+	cursor: pointer;
+	display: block;
+	z-index: 2;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+  }
+  .progress-wrap:hover::before {
+	opacity: 1;
+  }
+  .progress-wrap svg path {
+	fill: none;
+  }
+  .progress-wrap svg.progress-circle path {
+	stroke: var(--mainred);
+	stroke-width: 4;
+	box-sizing: border-box;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+  }
+
+  #backpage{
+	  background-color: #8c2a00;
+	  color:#fff;
+	  padding:10px 30px;
+	  border-radius:10px;
+	  border:1px solid transparent;
+	  cursor:pointer;
+  }
+
+  .subjectbox{
+	background-color:#dadada;
+	border:1px solid transparent;
+	border-radius:10px;
+}
+
+#forms{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	gap:20px;
+	border:1px solid var(--mainred)
+}
+
+#clearbutton{
+	background:#8c2a00;
+	color:#fff;
+	padding:15px;
+	cursor:pointer;
+}
+
+.wpcf7-submit{
+	background:#8c2a00;
+	color:#fff;
+	padding:10px;
+	border:none;
+}
+
+.wpcf7-form-control{
+	border:1px solid #8c2a00!important;
+	border-radius:5px;
+}
+
+.teacher-photo{
+	max-width: 200px;
+}
+
+.cv-text{
+	font-weight:bold;
+	color:#000!important
+}
+
+.socials-row{
+	gap:20px;
+}
+
+.socials-row a{
+	color:#8c2a00!important;
+	border:1px solid #8c2a00;
+	padding:10px;
+}
