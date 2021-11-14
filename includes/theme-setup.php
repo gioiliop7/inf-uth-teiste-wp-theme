@@ -195,11 +195,6 @@ function inf_uth_register_required_plugins() {
     // This is an example of how to include a plugin from the WordPress Plugin Repository.
     $plugins = array(
         array(
-            'name'      => 'greeklish-permalinks',
-            'slug'      => 'greeklish-permalink',
-            'required'  => true,
-        ),
-        array(
             'name'      => 'Safe SVG',
             'slug'      => 'safe-svg',
             'required'  => false,
@@ -249,4 +244,12 @@ function var_dump_pre($mixed = null) {
         $js_code = '<script>' . $js_code . '</script>';
     }
     echo $js_code;
+}
+
+add_filter('upload_mimes', 'custom_upload');
+function custom_upload ( $existing_mimes=array() ) {
+    // add your extension to the mimes array as below
+    $existing_mimes['zip'] = 'application/zip';
+    $existing_mimes['gz'] = 'application/x-gzip';
+    return $existing_mimes;
 }
