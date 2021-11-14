@@ -9,7 +9,7 @@ $email= get_field('gramm_info','option')['email_gramm'];
 <section id="contact-section">
     <div class=container-fluid>
         <div class="row">
-            <div class="col-md-8 contact-map">
+            <div class="col-md-8 p-0 contact-map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d776.5308621446193!2d22.4369503292467!3d38.87541734279023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135f5ac8c92b3db5%3A0x1bd323cbe48021eb!2zzqTOlc6ZIM6jz4TOtc-BzrXOrM-CIM6VzrvOu86szrTOsc-C!5e0!3m2!1sel!2sgr!4v1618735560680!5m2!1sel!2sgr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="col-md-4 contact-info">
