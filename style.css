@@ -310,6 +310,11 @@ blockquote::after {
 	height:170px;
 }
 
+.announncements-row{
+	gap:1.5rem;
+	justify-content: center;
+}
+
 .more{
 	position: absolute;
 	top:130px;
@@ -467,6 +472,15 @@ span.page-numbers.current{
 	border:2px solid #8c2a00;
 }
 
+.subject-box a{
+	color:#ffb7b0;
+	transition: all ease 0.2s;
+}
+
+.subject-box a:hover{
+	color:#ffb7b0;
+}
+
 .subject-title{
 	padding:10px;
 	border-bottom:1px solid #fff;
@@ -603,6 +617,16 @@ span.page-numbers.current{
 .cv-text{
 	font-weight:bold;
 	color:#000!important
+}
+
+.filecv{
+	color:#000;
+	font-size: 1.5rem;
+	transition: all ease 0.2s;
+}
+
+.filecv:hover{
+	color:#8c2a00;
 }
 
 .socials-row{

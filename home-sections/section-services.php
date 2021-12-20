@@ -3,42 +3,32 @@
       <h2 class="text-center pt-3 "> ΗΛΕΚΤΡΟΝΙΚΕΣ ΥΠΗΡΕΣΙΕΣ </h2>
       <h5 class="text-center mb-5"> Όλες οι ηλεκτρονικές υπηρεσίες, διαθέσιμες για τους φοιτητές!</h5>
       <div class="row justify-content-center">
-         <div class="col-md-3 service-item text-center mb-3">
-            <a href="https://eclass.uth.gr/" target="blank">
-               <i class="fas fa-school service-icon mb-3"></i>
-               <h2 class="service-text"> ECLASS </h2>
-            </a>
-         </div>
-         <div class="col-md-3 service-item text-center mb-3">
-            <a href="https://eclass.uth.gr/" target="blank">
-               <i class="fas fa-marker service-icon mb-3"></i>
-               <h2 class="service-text"> Ηλεκτρονική γραμματεία </h2>
-            </a>
-         </div>
-         <div class="col-md-3 service-item text-center mb-3">
-            <a href="https://eclass.uth.gr/" target="blank">
-               <i class="fas fa-plug service-icon mb-3"></i>
-               <h2 class="service-text"> Delos-GRNET </h2>
-            </a>
-         </div>
-         <div class="col-md-3 service-item text-center mb-3">
-            <a href="https://eclass.uth.gr/" target="blank">
-               <i class="fas fa-envelope service-icon mb-3"></i>
-               <h2 class="service-text"> Webmail </h2>
-            </a>
-         </div>
-         <div class="col-md-3 service-item text-center mb-3">
-            <a href="https://eclass.uth.gr/" target="blank">
-               <i class="fas fa-network-wired service-icon mb-3"></i>
-               <h2 class="service-text"> VPN </h2>
-            </a>
-         </div>
-         <div class="col-md-3 service-item text-center mb-3">
-            <a href="https://eclass.uth.gr/" target="blank">
-               <i class="fas fa-book-open service-icon mb-3"></i>
-               <h2 class="service-text"> Εύδοξος </h2>
-            </a>
-         </div>
+         <?php
+
+         // Check rows exists.
+         if (have_rows('services','option')) :
+
+            // Loop through rows.
+            while (have_rows('services','option')) : the_row();
+
+               // Load sub field value.
+               $title = get_sub_field('service_title');
+               $link = get_sub_field('service_link');
+               $icon = get_sub_field('icon');
+         ?>
+               <div class="col-md-3 service-item text-center mb-3">
+                  <a href="<?php echo $link;?>" target="blank">
+                     <div class="service-icon"><?php echo $icon;?></div>
+                     <h2 class="service-text"> <?php echo $title;?> </h2>
+                  </a>
+               </div>
+         <?php
+            // End loop.
+            endwhile;
+         // Do something...
+         endif;
+         ?>
+
       </div>
    </div>
 </section>

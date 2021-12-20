@@ -3,6 +3,7 @@
 $facebook_url = get_field('teacher_social')['teacher_facebook'];
 $instagram_url = get_field('teacher_social')['teacher_instagram'];
 $linkedin_url = get_field('teacher_social')['teacher_linkedin'];
+$cv = get_field('teacher_cv')["url"];
 ?>
 
 <div class="container">
@@ -19,8 +20,11 @@ $linkedin_url = get_field('teacher_social')['teacher_linkedin'];
                 <hr>
                 <p class="text-left"><strong>Τηλέφωνο: </strong><?php echo get_field('teacher-tel'); ?></p>
                 <hr>
-                <a target="_blank" href="<?php echo get_field('teacher_cv'); ?>" class="text-left cv-text">Βιογραφικό</a>
-                <hr>
+                <?php if ($cv) { ?>
+                    <p class="text-left"><strong>Βιογραφικό: </strong><span><a class="filecv" target="_blank" href="<?php echo get_field('teacher_cv')["url"]; ?>"><i class="fas fa-file"></i></a></span></p>
+                    <hr>
+                <?php } ?>
+
             </div>
             <div class="row socials-row w-100">
                 <?php if ($facebook_url) { ?>
