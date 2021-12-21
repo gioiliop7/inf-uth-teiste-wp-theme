@@ -612,6 +612,7 @@ span.page-numbers.current{
 
 .teacher-photo{
 	max-width: 200px;
+	object-fit: contain;
 }
 
 .cv-text{

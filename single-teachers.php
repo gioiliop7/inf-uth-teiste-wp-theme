@@ -9,11 +9,13 @@ $cv = get_field('teacher_cv')["url"];
 <div class="container">
     <h2 class="text-center mb-5"><?php echo the_title(); ?></h2>
     <div class="row w-100 justify-content-center">
-        <div class="col-md-4">
-            <?php if (has_post_thumbnail()) { ?>
+        <?php if (has_post_thumbnail()) { ?>
+            <div class="col-md-4">
                 <img src="<?php echo the_post_thumbnail_url(); ?>" class="teacher-photo">
-            <?php } ?>
-        </div>
+            </div>
+        <?php } else { ?>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/user.png" class="teacher-photo">
+        <?php } ?>
         <div class="col-md-8">
             <div class="teacher-info mb-5">
                 <p class="text-left"><strong>Email: </strong><?php echo get_field('teacher-email'); ?></p>
